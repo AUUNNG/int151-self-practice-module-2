@@ -1,0 +1,5 @@
+เข้าใจการทำงานกับ Arrays และ Objects ใน JavaScript
+การใช้ push, splice, findIndex, และ includes
+ความเข้าใจเรื่องการอ้างอิง (reference) และการคัดลอก (copy) object/array
+แต่ละฟังก์ชันทำงานเฉพาะด้านของมันเอง
+เขียนโค้ดที่ แยกความรับผิดชอบชัดเจน
