@@ -1,0 +1,50 @@
+## Traversing Nodes
+childElementCount       จำนวนลูก (ไม่รวม text node)
+firstElementChild       ลูกคนแรก (เฉพาะ element)
+firstChild              ลูกคนแรก (รวมทุกชนิด node เช่น text)
+lastElementChild        ลูกคนสุดท้าย (เฉพาะ element)
+lastChild               ลูกคนสุดท้าย (รวมทุกชนิด node)
+previousElementSibling  element ก่อนหน้า (พี่)
+previousSibling         node ก่อนหน้า (อาจเป็น text node)
+nextElementSibling      element ถัดไป (น้อง)
+nextSibling             node ถัดไป (อาจเป็น text node)
+
+## Selecting Element
+
+### Element
+getElementById("id")                เลือก element ตาม id
+
+### HTMLCollection
+getElementsByClassName("class")	    เลือกทุก class (HTMLCollection)
+getElementsByTagName("tag")         เลือกทุก tag (HTMLCollection)
+
+### NodeList
+getElementsByName("name")           ใช้กับฟอร์ม เช่น <input name="username">
+querySelectorAll("css-selector")    เลือกทั้งหมดตาม CSS selector (NodeList)
+querySelector("css-selector")       เลือกตัวแรกที่ตรงตาม CSS selector
+
+## Create/Update Element
+createElement()
+setAttribute()
+
+## Text and HTML
+textContent	ข้อความล้วน (รวมซ่อน)
+innerText	ข้อความที่มองเห็น
+innerHTML	โค้ด HTML ด้านใน
+
+## Manipulating Nodes
+appendChild()                           เพิ่มท้ายลูกของ element
+insertBefore (newNode, referenceNode)   แทรกก่อน node ที่มีอยู่
+replaceChild(newChild, oldChild)        แทนที่ node
+removeChild(child)                      ลบ node ลูกออก
+
+## dataset
+element.dataset     เข้าถึง data-* attributes
+
+## classList
+add("a", "b")           เพิ่มคลาส
+remove("a")             ลบคลาส
+toggle("a")             สลับการมี/ไม่มีคลาส
+contains("a")           ตรวจสอบว่ามีคลาสไหม
+replace("old", "new")   แทนที่คลาส
+item(index)             คลาสตามลำดับ
